@@ -1,24 +1,46 @@
-# The workshop
-A hands on workshop on python based FOSS tools for geospatial analysis 
+# Basic workshop requirement
 
-# Environment setup
+1. Hardware with 64 bit OS, windows 10 and Mac latest updated version to run docker software, workshop is heavily dependent on docker and please ensure it is working in your computer, test docker by downloading and running the images helloworld and ubuntu
+1. Google earth desktop version software
+1. Quantum GIS software
+1. Latest workshop Github repo folder in local- https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis/archive/master.zip
 
-Past experience is that it is better to have a linux environment to avoid issues in running geospatial libraries. Docker container could be a good way forward in this regard. The following points are to make a container with all libraries for FOSS-Python-GeospatialAnalysis workshop. The container is based on Jupyterhub/jupyterhub docker image which is based on debian 8 and have conda by default. The users of Windows and Mac are requested to see this [announcement](https://blog.docker.com/2016/07/docker-for-mac-and-windows-production-ready/) and follow the respective tools. As the libraries installation cost above couple of GB's in bandwidth it is requested to setup the environment before the workshop
-1. To setup jupyterhub container in the docker and get into its bash terminal
-    ```
-    docker run -d --name jupyterhub jupyterhub/jupyterhub jupyterhub
-    docker images
-    docker exec -it jupyterhub bash
-    ```
-1. To instll required libraries
-    ```
-    conda config --add channels conda-forge
-    dpkg --add-architecture i386 
-    apt-get update
-    apt-get install libsm6 libxrender1 libfontconfig1
-    apt install libgl1-mesa-swx11
-    conda install -c conda-forge geopandas
-    conda install -c conda-forge gdal
-    conda install -c conda-forge/label/broken gdal 
-    ```
-1. To run the jupyter notebook within the container and view it in the native OS browser
+# The workshop image set up with docker
+
+1. Download the workshop image tar file from google drive with this link, do visit the workshop repository to get the latest/updated version of the docker image. The tar file is 4.6 GB in size, please cheksum the downloaded tar to ensure its hash as 57e05b908790697e07f553d684bf5607
+1. Uuse docker as follows, to load the tar into docker as an image
+```   
+docker load -i foss_pt_gsa_ubuntu_v1.tar
+```
+1. To check the docker is loaded with images, ensure the image foss-pt-gsa/foss-pt-gsa:version1 is listed
+```
+docker images
+```
+1. To run the image
+```
+docker run -dit foss-pt-gsa/foss-pt-gsa:version1
+```
+1. Get the CONTAINER_ID from the command ```docker ps```
+1. To enter into the image bash
+```
+docker exec -it CONTAINER_ID bash
+```
+1. After enter into the image’s bash terminal, enter following commands. the commands download the workshop github repo zip file into a working direcoty, then unzip it and get into the repo folder to start a jupter notebook server
+```
+cd /home/ubuntu/
+wget https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis/archive/master.zip
+unzip master.zip
+cd FOSS-Python-GeospatialAnalysis-master
+jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
+```
+1. Note down the link provided by the jupyter notebook such as example http://0.0.0.0:8889/?token=c8e944b8397b0bde97b4d9284e5e3ffc0136658fcca3ea1e
+1. Logout from the docker image bash(by typing ctrl+q or closing the bash window) and in the host computer note down the image_ID of the workshop image running inside the docker by
+```
+docker ps
+```
+1. Then inspect about the docker image to get to know the image’s IP address. Note down the ipaddress
+```
+docker inspect image_ID
+```
+1. Edit the jupter server given link as into http://ipaddress:8889/?token=c8e944b8397b0bde97b4d9284e5e3ffc0136658fcca3ea1e
+1. Open the link in host computer browser, it shows the Jupyternotebooks in the workshop repo and click on the file docker_test.ipynb, to run the notebook and excute its first cell to ensure all the libraries for the workshop is working properly

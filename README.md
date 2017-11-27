@@ -7,7 +7,7 @@
 
 # The workshop image set up with docker
 
-1. Download the workshop image tar file from google drive with this link, do visit the workshop repository to get the latest/updated version of the docker image. The tar file is 4.6 GB in size, please cheksum the downloaded tar to ensure its hash as 57e05b908790697e07f553d684bf5607
+1. Download the workshop image tar file from google drive with [this](https://drive.google.com/file/d/1qvrpxsz9YHWNtZHNxkYGQ4syz0JdwxY4/edit) link, do visit the workshop [repository](https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis) to get the latest/updated version of the docker image. The tar file is 4.6 GB in size, please cheksum the downloaded tar to ensure its hash as 57e05b908790697e07f553d684bf5607
 1. Uuse docker as follows, to load the tar into docker as an image
 ```   
 docker load -i foss_pt_gsa_ubuntu_v1.tar

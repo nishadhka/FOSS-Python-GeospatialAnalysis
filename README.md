@@ -45,7 +45,7 @@ docker inspect image_ID
 1. Edit the jupter server given link as into http://ipaddress:8889/?token=c8e944b8397b0bde97b4d9284e5e3ffc0136658fcca3ea1e
 1. Open the link in host computer browser, it shows the Jupyternotebooks in the workshop repo and click on the file docker_test.ipynb, to run the notebook and excute its first cell to ensure all the libraries for the workshop is working properly
 1. Open other jupyter notebooks inside the folders for workshop flow
-1. The files created in the docker can be tranfered to host computer to view the files in QGIS, enter command ```docker ps``` in your host computer, note down the ```NAMES```, enjoy interesting names provided by docker itself, use following command\
+1. The files created in the docker can be tranfered to host computer to view the files in QGIS, enter command ```docker ps``` in your host computer, note down the ```NAMES```, enjoy interesting names provided by docker itself, use following command
 ```
-docker cp optimistic_jang:/home/ubuntu/FOSS-Python-GeospatialAnalysis-master /home/yourhost/location/
+docker cp NAMES:/home/ubuntu/FOSS-Python-GeospatialAnalysis-master /home/yourhost/location/
 ```

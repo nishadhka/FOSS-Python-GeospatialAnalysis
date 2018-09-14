@@ -21,38 +21,36 @@ There won't be any environment setup session separately, participants are reques
 
 **Workshop Plan**
 
-2. Component 1- 40 minutes
-1. Break- 5 minutes
+1. Component 1- 40 minutes
+2. Break- 5 minutes
 3. Component 2- 50 minutes
-1. Break- 5 minutes
-4. Component 3- 50 minutes
+4. Break- 5 minutes
+5. Component 3- 50 minutes
 
 ### Workshop Prerequisites
 
 1. Laptop 32bit/64 bit
 1. Workshop material is tested on 64 bit computer, it is said to be working in 32 bit, lets experiment!
 1. A copy of Docker container image from [here](https://drive.google.com/file/d/1RbnQAiRJY40xO6ty2TPXxM5-4vqG1cl_), file from the link foss-pt-gsa_v3.tar.gz is 2.5 GB in size, will be using this container for DIY
-
 **Linux**
-
 1. Install docker, I followed [digital ocean install tutorial ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04),  which worked!.
 1. Use docker to load downloaded tar into it as an container image, before that unzip the foss-pt-gsa_v3.tar.gz into foss-pt-gsa_v3.tar
-```   
-docker load -i  foss-pt-gsa_v3.tar 
-```
+	```   
+	docker load -i  foss-pt-gsa_v3.tar 
+	```
 1. To check the docker is loaded with new image, ensure the image ```foss-pt-gsa/foss-pt-gsa:version3``` is listed by entering
-```
-docker images
-```
+	```
+	docker images
+	```
 1. To run the image, enter
-```
-docker run -dit foss-pt-gsa/foss-pt-gsa:version3
-```
+	```
+	docker run -dit foss-pt-gsa/foss-pt-gsa:version3
+	```
 1. Get the CONTAINER_ID of the just started container by the command ```docker ps```
 1. To enter into the image bash
-```
-docker exec -it CONTAINER_ID bash
-```
+	```
+	docker exec -it CONTAINER_ID bash
+	```
 1. After enter into the image’s bash terminal, enter following commands. the commands download the workshop github repo zip file into a working direcoty, then unzip it and get into the repo folder to start a jupter notebook server 
 
         cd /home/ubuntu/  
@@ -63,13 +61,13 @@ docker exec -it CONTAINER_ID bash
       
 1. Note down the link provided by the jupyter notebook such as example http://0.0.0.0:8889/?token=c8e944b8397b0bde97b4d9284e5e3ffc0136658fcca3ea1e
 1. Logout from the docker image bash (by typing ctrl+q or closing the bash window) and in the host computer note down the image_ID of the workshop image running inside the docker by
-```
-docker ps
-```
+	```
+	docker ps
+	```
 1. Then inspect about the docker image to get to know the image’s IP address. Note down the ipaddress
-```
-docker inspect image_ID | grep "IPAddress"
-```
+	```
+	docker inspect image_ID | grep "IPAddress"
+	```
 1. Edit the jupter server given link as into http://ipaddress:8889/?token=c8e944b8397b0bde97b4d9284e5e3ffc0136658fcca3ea1e
 1. Open the link in host computer browser, it shows the Jupyternotebooks in the workshop repo and click on the file docker_test.ipynb, to run the notebook and execute its first cell to ensure all the libraries for the workshop is working properly
 
@@ -103,12 +101,12 @@ docker inspect image_ID | grep "IPAddress"
       
 1. Note down the link provided by the jupyter notebook such as example http://0.0.0.0:8080/?token=c8e944b8397b0bde97b4d9284e5e3ffc0136658fcca3ea1e
 1. Logout from the docker image bash (by typing ctrl+q or closing the bash window) and in the host computer note down the image_ID of the workshop image running inside the docker by
-```
-docker ps
-```
+	```
+	docker ps
+	```
 1. Then inspect about the docker image to get to know the image’s IP address. Note down the ipaddress
-```
-docker inspect image_ID | grep "IPAddress"
-```
+	```
+	docker inspect image_ID | grep "IPAddress"
+	```
 1. Edit the jupter server given link as into http://ipaddress:8889/?token=c8e944b8397b0bde97b4d9284e5e3ffc0136658fcca3ea1e
 1. Open the link in host computer browser, it shows the Jupyternotebooks in the workshop repo and click on the file docker_test.ipynb, to run the notebook and execute its first cell to ensure all the libraries for the workshop is working properly

@@ -97,16 +97,7 @@ There won't be any environment setup session separately, participants are reques
         wget https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis/archive/master.zip
         unzip master.zip
         cd FOSS-Python-GeospatialAnalysis-master
-        jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
+        jupyter notebook --ip=0.0.0.0 --port=8080 --allow-root
       
 1. Note down the link provided by the jupyter notebook such as example http://0.0.0.0:8080/?token=c8e944b8397b0bde97b4d9284e5e3ffc0136658fcca3ea1e
-1. Logout from the docker image bash (by typing ctrl+q or closing the bash window) and in the host computer note down the image_ID of the workshop image running inside the docker by
-	```
-	docker ps
-	```
-1. Then inspect about the docker image to get to know the image’s IP address. Note down the ipaddress
-	```
-	docker inspect image_ID | grep "IPAddress"
-	```
-1. Edit the jupter server given link as into http://ipaddress:8889/?token=c8e944b8397b0bde97b4d9284e5e3ffc0136658fcca3ea1e
-1. Open the link in host computer browser, it shows the Jupyternotebooks in the workshop repo and click on the file docker_test.ipynb, to run the notebook and execute its first cell to ensure all the libraries for the workshop is working properly
+1. Replace the 0.0.0.0 with default 192.168.99.100 address of docker toolbox as per [this](https://stackoverflow.com/questions/42866013/docker-toolbox-localhost-not-working)

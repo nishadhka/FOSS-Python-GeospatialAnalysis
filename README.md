@@ -7,7 +7,7 @@
 1. Open terminal and change directory into work to avoid permission issues later
 ![](https://raw.githubusercontent.com/nishadhka/FOSS-Python-GeospatialAnalysis/master/presentation/jupyter_pic1.png)
 1. From the terminal, clone the github repository by ``` git clone https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis.git``` . To save your edits and improve upon the repo, fork it and clone your fork instead.  
-1. Open and work with Jupyter notebooks in folders helloworld, on_raster, on_vector
+1. Using left side pane of Jupyter lab, open and work with Jupyter notebooks in folders helloworld, on_raster, on_vector
 ## Free and Open Source libraries of Python for Geo spatial Analysis and Visualisation(Maps and Satellite imageries)
 
 Geospatial representation are so prevalent in day to day life, such as even in simple travel related conversation to maps, aerial/satellite images etc. In digital era, geospatial data is extensively produced and consumed in ever growing proportion. Python with its free and open source libraries are giving wide variety yet simple and effective set of tools to visualise and analyse geospatial data. The current workshop is directed for beginners of Python programming language, who have basic understanding on computing and data formats. The primary objective of the workshop is to introduce and give hands on training on selected list of FOSS libraries for geospatial analysis. The workshop as a do it yourself fashion tries to solve two real world problems in Geographical Information System (GIS) and its geospatial data sources.

@@ -14,11 +14,17 @@ Python environment and work flow setup, an assisted task of setting up the Docke
 
 **Component 2: work with vector data**
 
-Find characteristics of road network(type of road network, length of the type) within a 1X1 km grid. The data source is Open Street Map (OSM) road network data on a city level (60X60km size). This operation is operationally simple such as measure a line feature but computationally intensive as the operation comprised of geometry within operation on dense road network seen in urban setup. Libraries such as Shapely, Fiona, Geopandas and rtree index will be used for the fast processing of this operation. This component comprised of three exercises 1. Find distance between two points 2. Find distance between two points constrained by another vector 3. Find distance between large number of points in for loop
+1. Geospatial data operations by Geopandas, Geometrical operations using Shapely
+1. Map plotting of vectors using matplotlib toolkit Basemap, video from maps
+1. Web mapping on vector data using Folium
 
 **Component 3: work with raster data**
 
-Find cloud cover percentage over area of interest. The data source is Landsat satellite imagery. Searching cloud free Landsat images over an Area of Interest for a temporal extent of a year or more is manual and time consuming. Applying cloud cover detection algorithm could make this operation automatic. Libraries such as rasterio, Geopandas, Fiona, and libraries related to landsat algorithms will be used for this task. This component comprised of two exercises 1. Convert the imagery in geotiff into numpy arrays 2. Apply the algorithms to find the cloud cover
+Basic workflow on satellite imageries using Rasterio, NDVI and other indexing
+Map plotting of rasters using matplotlib toolkit Basemap
+Web mapping on raster data using Folium
+Accessing Google earth engine using its Python API
+
 
 **Note :**
 There won't be any environment setup session separately, participants are requested to ensure below prerequisites are working properly. 

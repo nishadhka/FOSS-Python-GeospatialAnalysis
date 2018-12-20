@@ -1,5 +1,5 @@
-## Scipy-India 2018##
-1. Please fill this [form](https://goo.gl/forms/KvvKCBeFl8Vc7xxz2) to add your github account for 
+## Scipy-India 2018
+1. Please fill this [form](https://goo.gl/forms/KvvKCBeFl8Vc7xxz2) to add your github account for jupyterhub access
 1. Jupyterhub instance can be accessed in [here](https://howtotrainyourcomputer.in/hub/login)
 
 ## Free and Open Source libraries of Python for Geo spatial Analysis and Visualisation(Maps and Satellite imageries)

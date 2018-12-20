@@ -1,3 +1,7 @@
+## Scipy-India 2018##
+1. Please fill this [form](https://goo.gl/forms/KvvKCBeFl8Vc7xxz2) to add your github account for 
+1. Jupyterhub instance can be accessed in [here](https://howtotrainyourcomputer.in/hub/login)
+
 ## Free and Open Source libraries of Python for Geo spatial Analysis and Visualisation(Maps and Satellite imageries)
 
 Geospatial representation are so prevalent in day to day life, such as even in simple travel related conversation to maps, aerial/satellite images etc. In digital era, geospatial data is extensively produced and consumed in ever growing proportion. Python with its free and open source libraries are giving wide variety yet simple and effective set of tools to visualise and analyse geospatial data. The current workshop is directed for beginners of Python programming language, who have basic understanding on computing and data formats. The primary objective of the workshop is to introduce and give hands on training on selected list of FOSS libraries for geospatial analysis. The workshop as a do it yourself fashion tries to solve two real world problems in Geographical Information System (GIS) and its geospatial data sources.
@@ -28,7 +32,23 @@ There won't be any environment setup session separately, participants are reques
 5. Component 3- 50 minutes
 
 ### Workshop Prerequisites
+Workshop prerequisites 
 
+The hands-on exercises are in Jupyter notebooks available [here](https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis)
+
+As workshop depends on multiple libraries which are time consuming to setup, there are two options to carry out hands-on.
+
+Option 1
+1. There will be Jupyterhub to have hands on with notebooks. Accessible to participants during workshop which requires github account to signin.
+2. Participants are requested to ensure good internet connectivity, personal data card/hotspot as a contingency.
+3. There will be a Goolge form circulated short before workshop to collect participants github username. This is to whitelist participants github account to access the Jupyterhub. Participants are requested to check https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis for the goolge form link before workshop
+
+Option 2
+1. The docker imagery for the workshop is in [dockerhub](https://hub.docker.com/r/airpollutionstudyindia/foss-pt-gsa/)
+3. Have latest clone of workshop notebooks https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis
+2. Use personal laptop and setup the docker with above image, use Jupyter notebook served from the docker, for a setup please go through below
+
+**Harware**
 1. Laptop 32bit/64 bit
 1. Workshop material is tested on 64 bit computer, it is said to be working in 32 bit, lets experiment!
 1. A copy of Docker container image from [here](https://drive.google.com/file/d/1RbnQAiRJY40xO6ty2TPXxM5-4vqG1cl_), file from the link foss-pt-gsa_v3.tar.gz is 2.5 GB in size, will be using this container for DIY

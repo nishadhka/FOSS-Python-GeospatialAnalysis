@@ -3,12 +3,10 @@
 1. Jupyterhub instance can be accessed in [here](https://howtotrainyourcomputer.in/hub/login)
 1. After sign in, wait for Jupyterhub to load completely
 1. Change the URL from tree to lab
-Jupyter tree             |  Jupyter lab
-:-------------------------:|:-------------------------:
 ![](https://raw.githubusercontent.com/nishadhka/FOSS-Python-GeospatialAnalysis/master/presentation/jupyter_pic3.png)  |  ![](https://raw.githubusercontent.com/nishadhka/FOSS-Python-GeospatialAnalysis/master/presentation/jupyter_pic2.png)
-1. Open Terminal and change directory into work to avoid permission issues
+1. Open terminal and change directory into work to avoid permission issues later
 ![](https://raw.githubusercontent.com/nishadhka/FOSS-Python-GeospatialAnalysis/master/presentation/jupyter_pic1.png)
-1. Clone the github repository from [here](https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis.git) by ``` git clone https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis.git``` from the terminal. To save your edits and improve upon the repo, fork it and clone your fork instead.  
+1. From the terminal, clone the github repository by ``` git clone https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis.git``` . To save your edits and improve upon the repo, fork it and clone your fork instead.  
 1. Open and work with Jupyter notebooks in folders helloworld, on_raster, on_vector
 ## Free and Open Source libraries of Python for Geo spatial Analysis and Visualisation(Maps and Satellite imageries)
 

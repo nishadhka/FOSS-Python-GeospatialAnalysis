@@ -20,10 +20,10 @@ Python environment and work flow setup, an assisted task of setting up the Docke
 
 **Component 3: work with raster data**
 
-Basic workflow on satellite imageries using Rasterio, NDVI and other indexing
-Map plotting of rasters using matplotlib toolkit Basemap
-Web mapping on raster data using Folium
-Accessing Google earth engine using its Python API
+1. Basic workflow on satellite imageries using Rasterio, NDVI and other indexing
+1. Map plotting of rasters using matplotlib toolkit Basemap
+1. Web mapping on raster data using Folium
+1. Accessing Google earth engine using its Python API
 
 
 **Note :**

@@ -31,11 +31,9 @@ There won't be any environment setup session separately, participants are reques
 
 **Workshop Plan**
 
-1. Component 1- 40 minutes
-2. Break- 5 minutes
-3. Component 2- 50 minutes
-4. Break- 5 minutes
-5. Component 3- 50 minutes
+1. Component 1- 30 minutes
+3. Component 2- 45 minutes
+5. Component 3- 45 minutes
 
 ### Workshop Prerequisites
 Workshop prerequisites 

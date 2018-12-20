@@ -1,7 +1,15 @@
 ## Scipy-India 2018
 1. Please fill this [form](https://goo.gl/forms/KvvKCBeFl8Vc7xxz2) to add your github account for jupyterhub access
 1. Jupyterhub instance can be accessed in [here](https://howtotrainyourcomputer.in/hub/login)
-
+1. After sign in, wait for Jupyterhub to load completely
+1. Change the URL from tree to lab
+Jupyter tree             |  Jupyter lab
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/nishadhka/FOSS-Python-GeospatialAnalysis/master/presentation/jupyter_pic3.png)  |  ![](https://raw.githubusercontent.com/nishadhka/FOSS-Python-GeospatialAnalysis/master/presentation/jupyter_pic2.png)
+1. Open Terminal and change directory into work to avoid permission issues
+![](https://raw.githubusercontent.com/nishadhka/FOSS-Python-GeospatialAnalysis/master/presentation/jupyter_pic1.png)
+1. Clone the github repository from [here](https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis.git) by ``` git clone https://github.com/nishadhka/FOSS-Python-GeospatialAnalysis.git``` from the terminal. To save your edits and improve upon the repo, fork it and clone your fork instead.  
+1. Open and work with Jupyter notebooks in folders helloworld, on_raster, on_vector
 ## Free and Open Source libraries of Python for Geo spatial Analysis and Visualisation(Maps and Satellite imageries)
 
 Geospatial representation are so prevalent in day to day life, such as even in simple travel related conversation to maps, aerial/satellite images etc. In digital era, geospatial data is extensively produced and consumed in ever growing proportion. Python with its free and open source libraries are giving wide variety yet simple and effective set of tools to visualise and analyse geospatial data. The current workshop is directed for beginners of Python programming language, who have basic understanding on computing and data formats. The primary objective of the workshop is to introduce and give hands on training on selected list of FOSS libraries for geospatial analysis. The workshop as a do it yourself fashion tries to solve two real world problems in Geographical Information System (GIS) and its geospatial data sources.

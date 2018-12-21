@@ -1,6 +1,5 @@
 ## Scipy-India 2018
 ## UPDATES
-1. Please fill this new [off-session form](https://docs.google.com/forms/d/1XmU-AoDAbj4TIyBHeHLwtSmTlQrYZeCI5XN09qO_QpY/edit) for Jupyterhub access, form will be active upto **2018/12/21 20:30PM**
 1. The JupyterHub will be active from 2018/12/21 18:30PM to 2018/12/22 07:30AM, please make use of the facility 
 1. For live QA, please see this Gitter https://gitter.im/FOSS-Python-GeospatialAnalysis/community, github account can be used to access the chat
 1. Jupyterhub instance can be accessed in [here](https://howtotrainyourcomputer.in/hub/login)

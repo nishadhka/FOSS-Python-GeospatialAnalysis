@@ -1,5 +1,8 @@
 ## Scipy-India 2018
-1. Please fill this [form](https://goo.gl/forms/KvvKCBeFl8Vc7xxz2) to add your github account for jupyterhub access
+## UPDATES
+1. Please fill this new [off-session-Scipy-India-2018 form] for Jupyterhub access, form will be active upto 2018/12/21 18:30PM
+1. The JupyterHub will be active from 2018/12/21 18:30PM to 2018/12/22 07:30AM, please make use of the facility 
+1. For live QA, please see this Gitter https://gitter.im/FOSS-Python-GeospatialAnalysis/community, github account can be used to access the chat
 1. Jupyterhub instance can be accessed in [here](https://howtotrainyourcomputer.in/hub/login)
 1. After sign in, wait for Jupyterhub to load completely
 1. Change the URL from tree to lab
